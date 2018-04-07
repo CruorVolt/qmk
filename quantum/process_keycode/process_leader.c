@@ -28,7 +28,7 @@ void leader_end(void) {}
 bool leading = false;
 uint16_t leader_time = 0;
 
-uint16_t leader_sequence[5] = {0, 0, 0, 0, 0};
+uint16_t leader_sequence[6] = {0, 0, 0, 0, 0, 0};
 uint8_t leader_sequence_size = 0;
 
 bool process_leader(uint16_t keycode, keyrecord_t *record) {
@@ -44,6 +44,7 @@ bool process_leader(uint16_t keycode, keyrecord_t *record) {
       leader_sequence[2] = 0;
       leader_sequence[3] = 0;
       leader_sequence[4] = 0;
+      leader_sequence[5] = 0;
       return false;
     }
     if (leading && timer_elapsed(leader_time) < LEADER_TIMEOUT) {
