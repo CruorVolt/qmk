@@ -82,8 +82,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 #ifdef AUDIO_ENABLE
-float tone_coin[][2]    = SONG(COIN_SOUND);
-float tone_ring[][2]    = SONG(SONIC_RING);
+float tone_doom[][2]    = SONG(E1M1_DOOM_FAST);
+float tone_mario[][2]    = SONG(MARIO_GAMEOVER_FAST);
 #endif
 
 void persistent_default_layer_set(uint16_t default_layer) {
@@ -148,13 +148,13 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
     case 3: //_GAMES
       if (record->event.pressed) {
         layer_on(_GAMES);
-        PLAY_NOTE_ARRAY(tone_coin, false, 0);
+        PLAY_SONG(tone_doom);
       }
       break;
     case 4: //_QWERTY
       if (record->event.pressed) {
         layer_off(_GAMES);
-        PLAY_NOTE_ARRAY(tone_ring, false, 0);
+        PLAY_SONG(tone_mario);
       }
       break;
   }
