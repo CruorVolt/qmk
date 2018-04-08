@@ -317,6 +317,18 @@
     H__NOTE(_AF4), \
     WD_NOTE(_G4 ),
 
+#define MARIO_GAMEOVER_FAST \
+    ED_NOTE(_C5 ), \
+    ED_NOTE(_G4 ), \
+    E__NOTE(_E4 ), \
+    E__NOTE(_A4 ), \
+    E__NOTE(_B4 ), \
+    E__NOTE(_A4 ), \
+    E__NOTE(_AF4), \
+    E__NOTE(_BF4), \
+    E__NOTE(_AF4), \
+    QD_NOTE(_G4 ),
+
 #define E1M1_DOOM  \
     Q__NOTE(_E3 ), \
     Q__NOTE(_E3 ), \
@@ -346,6 +358,36 @@
     Q__NOTE(_E3 ), \
     Q__NOTE(_E3 ), \
     H__NOTE(_BF3),
+
+#define E1M1_DOOM_FAST  \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E4 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_D4 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_C4 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_BF3), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_B3 ), \
+    S__NOTE(_C4 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E4 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_D4 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_C4 ), \
+    S__NOTE(_E3 ), \
+    S__NOTE(_E3 ), \
+    Q__NOTE(_BF3),
 
 #define DISNEY_SONG \
     H__NOTE(_G3 ),  \
